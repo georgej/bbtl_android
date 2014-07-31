@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/nav_title"
+    style="@style/TabTitleStyle" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/title_btn_left"
+            style="@style/WW"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/circle_fanhui" />
+
+        <LinearLayout
+            style="@style/WW"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/title_txt1"
+                style="@style/WW"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@id/title_txt2"
+                style="@style/WW"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_btn_right1_layout"
+            style="@style/WW"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+  		<Button
+            android:background="@drawable/button_bg"
+              android:id="@id/title_btn_right1"
+            style="@style/WW"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:text="@string/about_title"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="17dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- tab主页 -->
+    <item name="nav_title" type="id">false</item>
+    
+    <!-- title -->
+    <item name="title_txt1" type="id">false</item>
+    <item name="title_txt2" type="id">false</item>
+    <item name="title_btn_left" type="id">false</item>
+    <item name="title_btn_right1" type="id">false</item>
+    <item name="title_btn_right2" type="id">false</item>
+</resources>

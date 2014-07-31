@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnSchoolM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onBtnSchoolMClick"
+        android:text="@string/schoolManagerString" />
+
+    <Button
+        android:id="@+id/btnTeacherM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onBtnTeacherMClick"
+        android:text="@string/teacherManagerString" />
+
+    <Button
+        android:id="@+id/btnStudentM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onBtnStudentMClick"
+        android:text="@string/studentsManagerString" />
+
+    <Button
+        android:id="@+id/btnAskM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onBtnAskMClick"
+        android:text="@string/askManagerString" />
+
+    <Button
+        android:id="@+id/btnClassM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="onBtnClassMClick"
+        android:text="@string/classManagerString" />
+
+</LinearLayout>

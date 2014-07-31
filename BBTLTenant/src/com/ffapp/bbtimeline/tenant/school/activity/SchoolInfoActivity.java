@@ -1,0 +1,247 @@
+/**   
+* @Title: SchoolInfoActivity.java 
+* @Package com.ffapp.bbtimeline.tenant.school.activity 
+* @Description: TODO(用一句话描述该文件做什么) 
+* @author www.5fapp.com
+* @date 2014-7-13 下午9:17:49 
+* @version V1.0   
+*/
+package com.ffapp.bbtimeline.tenant.school.activity;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+import android.widget.ImageView.ScaleType;
+
+import com.ffapp.bbtimeline.common.base.BaseActivity;
+import com.ffapp.bbtimeline.tenant.R;
+
+/**
+ * @ClassName: SchoolInfoActivity 
+ * @Description: TODO(这里用一句话描述这个类的作用) 
+ * @author jiangzhiqi
+ *
+ */
+public class SchoolInfoActivity extends BaseActivity {
+	private ViewPager viewPager;  
+	 private ArrayList<View> pageViews;  
+	 private ImageView imageView;  
+	 private ImageView[] imageViews; 
+	 private ViewGroup group;
+	/** 
+	 * <p>Title: </p> 
+	 * <p>Description: </p>  
+	 */
+	public SchoolInfoActivity() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	/* (non-Javadoc)
+	 * <p>Title: onCreate</p> 
+	 * <p>Description: </p> 
+	 * @param savedInstanceState 
+	 * @see android.app.Activity#onCreate(android.os.Bundle) 
+	*/
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.school_info);
+		
+		initViewPager();
+		
+	}
+	/**
+	 * 根据请求来的图片，显示侧滑效果
+	* @Title: initPageView 
+	* @Description: TODO(这里用一句话描述这个方法的作用) 
+	* @param     设定文件 
+	* @return void    返回类型 
+	* @throws
+	 */
+	private void initViewPager(){
+		 int[] img=new int[]{R.drawable.s1,R.drawable.s2,R.drawable.s3,R.drawable.s4,R.drawable.s5,R.drawable.s6,R.drawable.s7,R.drawable.s8,R.drawable.s9,R.drawable.s10};
+	        LayoutInflater inflater = getLayoutInflater();  
+	        pageViews = new ArrayList<View>();   
+	        for(int i=0;i<img.length;i++){
+	    	    LinearLayout layout=new LinearLayout(this);
+	    	    LayoutParams ltp=new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+	    	    final ImageView imageView=new ImageView(this);
+	    	    imageView.setScaleType(ScaleType.FIT_XY);
+	    	    imageView.setImageResource(img[i]);
+	    	    layout.addView(imageView, ltp); 
+	    	    pageViews.add(layout);
+	        }
+	        imageViews = new ImageView[pageViews.size()];  
+	        
+	        group = (ViewGroup)findViewById(R.id.viewGroup);  
+	        viewPager = (ViewPager)findViewById(R.id.showImagePages);  
+	        
+	        for (int i = 0; i < pageViews.size(); i++) {  
+	            imageView = new ImageView(SchoolInfoActivity.this);  
+	            imageView.setLayoutParams(new LayoutParams(20,20));  
+	            imageView.setPadding(20, 0, 20, 0);  
+	            imageViews[i] = imageView;            
+	            if (i == 0) {  
+	                imageViews[i].setBackgroundResource(R.drawable.page_indicator_focused);  
+	            } else {  
+	                imageViews[i].setBackgroundResource(R.drawable.page_indicator);  
+	            }             
+	            group.addView(imageViews[i]);  
+	        }       
+	        viewPager.setAdapter(new GuidePageAdapter());  
+	        viewPager.setOnPageChangeListener(new GuidePageChangeListener());  
+	}
+	/* (non-Javadoc)
+	 * <p>Title: setContentLayout</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#setContentLayout() 
+	 */
+	@Override
+	public void setContentLayout() {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: dealLogicBeforeInitView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#dealLogicBeforeInitView() 
+	 */
+	@Override
+	public void dealLogicBeforeInitView() {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: initView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#initView() 
+	 */
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: dealLogicAfterInitView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#dealLogicAfterInitView() 
+	 */
+	@Override
+	public void dealLogicAfterInitView() {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: onClickEvent</p> 
+	 * <p>Description: </p> 
+	 * @param view 
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#onClickEvent(android.view.View) 
+	 */
+	@Override
+	public void onClickEvent(View view) {
+		// TODO Auto-generated method stub
+
+	}
+	class GuidePageAdapter extends PagerAdapter {  
+	  	  
+        @Override  
+        public int getCount() {  
+            return pageViews.size();  
+        }  
+  
+        @Override  
+        public boolean isViewFromObject(View arg0, Object arg1) {  
+            return arg0 == arg1;  
+        }  
+  
+        @Override  
+        public int getItemPosition(Object object) {  
+            // TODO Auto-generated method stub  
+            return super.getItemPosition(object);  
+        }  
+  
+        @Override  
+        public void destroyItem(View arg0, int arg1, Object arg2) {  
+            // TODO Auto-generated method stub  
+            ((ViewPager) arg0).removeView(pageViews.get(arg1));  
+        }  
+  
+        @Override  
+        public Object instantiateItem(View arg0, int arg1) {  
+            // TODO Auto-generated method stub  
+            ((ViewPager) arg0).addView(pageViews.get(arg1));  
+            return pageViews.get(arg1);  
+        }  
+  
+        @Override  
+        public void restoreState(Parcelable arg0, ClassLoader arg1) {  
+            // TODO Auto-generated method stub  
+  
+        }  
+  
+        @Override  
+        public Parcelable saveState() {  
+            // TODO Auto-generated method stub  
+            return null;  
+        }  
+  
+        @Override  
+        public void startUpdate(View arg0) {  
+            // TODO Auto-generated method stub  
+  
+        }  
+  
+        @Override  
+        public void finishUpdate(View arg0) {  
+            // TODO Auto-generated method stub  
+  
+        }  
+    } 
+    
+    class GuidePageChangeListener implements OnPageChangeListener {  
+    	  
+        @Override  
+        public void onPageScrollStateChanged(int arg0) {  
+            // TODO Auto-generated method stub  
+  
+        }  
+  
+        @Override  
+        public void onPageScrolled(int arg0, float arg1, int arg2) {  
+            // TODO Auto-generated method stub  
+  
+        }  
+  
+        @Override  
+        public void onPageSelected(int arg0) {  
+        	
+            for (int i = 0; i < imageViews.length; i++) {  
+                imageViews[arg0].setBackgroundResource(R.drawable.page_indicator_focused);
+//                Toast.makeText(this, "onBtnSchoolMClick clicked!", Toast.LENGTH_SHORT).show();
+                showToastMsg();
+                if (arg0 != i) {  
+                    imageViews[i].setBackgroundResource(R.drawable.page_indicator);  
+                }  
+            }
+        }  
+    } 
+    private void showToastMsg(){
+    	Toast.makeText(this, "dddd", Toast.LENGTH_SHORT).show();
+    }
+}
