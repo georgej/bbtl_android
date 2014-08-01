@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/schoolInfoTitle"
+        layout="@layout/title_btn_bar" />
+    <!-- pageView begin -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/showImagePages"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- pageView end -->
+    <!-- info begin -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+<!-- 学校基本信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/schoolName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="schoolNameschoolNameschochoolNames" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="addressaddressaddressaddressaddres" />
+
+                <TextView
+                    android:id="@+id/telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="telphonetelphonetelphonete" />
+            </LinearLayout>
+            <!-- 学校基本信息  end-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+				<TextView
+                    android:id="@+id/telph7one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="555" />
+				<TextView
+                    android:id="@+id/telphone6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="※※※※※※" />
+              
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+				<TextView
+                    android:id="@+id/telphone5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="555" />
+				<TextView
+                    android:id="@+id/telphone4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="※※※※※※" />
+              
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+				<TextView
+                    android:id="@+id/telphone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="555" />
+				<TextView
+                    android:id="@+id/telphone3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="※※※※※※" />
+              
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- info end -->
+<LinearLayout android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+    
+    
+    
+</LinearLayout>
+   
+
+   
+
+</LinearLayout>

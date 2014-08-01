@@ -364,7 +364,8 @@ containing a value of this type.
     public static final class id {
         public static final int ItemImage=0x7f060017;
         public static final int ItemText=0x7f060018;
-        public static final int action_settings=0x7f060029;
+        public static final int action_settings=0x7f06002e;
+        public static final int address=0x7f06001d;
         public static final int both=0x7f060009;
         public static final int btnAskM=0x7f060012;
         public static final int btnBegin=0x7f060014;
@@ -372,11 +373,12 @@ containing a value of this type.
         public static final int btnSchoolM=0x7f06000f;
         public static final int btnStudentM=0x7f060011;
         public static final int btnTeacherM=0x7f060010;
+        public static final int button1=0x7f060025;
+        public static final int button2=0x7f060026;
         public static final int disabled=0x7f060006;
         public static final int flip=0x7f06000e;
         public static final int imageView1=0x7f060016;
-        public static final int imageView2=0x7f06001c;
-        public static final int include1=0x7f060022;
+        public static final int include1=0x7f060027;
         public static final int manualOnly=0x7f06000a;
         /**  tab主页 
          */
@@ -387,21 +389,24 @@ containing a value of this type.
         public static final int pullUpFromBottom=0x7f06000c;
         public static final int rotate=0x7f06000d;
         public static final int schoolInfoTitle=0x7f060019;
-        public static final int schoolList=0x7f060023;
-        public static final int schoolName=0x7f06001d;
-        public static final int school_address=0x7f060024;
-        public static final int school_logo_s=0x7f060026;
-        public static final int school_shortName=0x7f060027;
-        public static final int school_slogan=0x7f060025;
+        public static final int schoolList=0x7f060028;
+        public static final int schoolName=0x7f06001c;
+        public static final int school_address=0x7f060029;
+        public static final int school_logo_s=0x7f06002b;
+        public static final int school_shortName=0x7f06002c;
+        public static final int school_slogan=0x7f06002a;
         public static final int showImagePages=0x7f06001a;
         public static final int spinner1=0x7f060015;
-        public static final int textView1=0x7f06001e;
-        public static final int textView2=0x7f06001f;
-        public static final int textView3=0x7f060020;
-        public static final int textView4=0x7f060021;
+        public static final int telph7one=0x7f06001f;
+        public static final int telphone=0x7f06001e;
+        public static final int telphone2=0x7f060023;
+        public static final int telphone3=0x7f060024;
+        public static final int telphone4=0x7f060022;
+        public static final int telphone5=0x7f060021;
+        public static final int telphone6=0x7f060020;
         public static final int title_btn_left=0x7f060003;
         public static final int title_btn_right1=0x7f060004;
-        public static final int title_btn_right1_layout=0x7f060028;
+        public static final int title_btn_right1_layout=0x7f06002d;
         public static final int title_btn_right2=0x7f060005;
         /**  title 
          */
@@ -528,7 +533,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.ffapp.bbtimeline.tenant:backgroundcolor
+          @attr name android:backgroundcolor
         */
         public static final int NavigationBar_backgroundcolor = 3;
         /**
@@ -541,7 +546,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name com.ffapp.bbtimeline.tenant:titlecolor
+          @attr name android:titlecolor
         */
         public static final int NavigationBar_titlecolor = 1;
         /**
@@ -557,7 +562,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.ffapp.bbtimeline.tenant:titlesize
+          @attr name android:titlesize
         */
         public static final int NavigationBar_titlesize = 2;
         /**
@@ -571,7 +576,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.ffapp.bbtimeline.tenant:titletext
+          @attr name android:titletext
         */
         public static final int NavigationBar_titletext = 0;
         /** Attributes that can be used with a PullToRefresh.
@@ -640,7 +645,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrAdapterViewBackground
+          @attr name android:ptrAdapterViewBackground
         */
         public static final int PullToRefresh_ptrAdapterViewBackground = 16;
         /**
@@ -659,7 +664,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrAnimationStyle
+          @attr name android:ptrAnimationStyle
         */
         public static final int PullToRefresh_ptrAnimationStyle = 12;
         /**
@@ -671,7 +676,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrDrawable
+          @attr name android:ptrDrawable
         */
         public static final int PullToRefresh_ptrDrawable = 6;
         /**
@@ -681,7 +686,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.ffapp.bbtimeline.tenant:ptrDrawableBottom
+          @attr name android:ptrDrawableBottom
         */
         public static final int PullToRefresh_ptrDrawableBottom = 18;
         /**
@@ -693,7 +698,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrDrawableEnd
+          @attr name android:ptrDrawableEnd
         */
         public static final int PullToRefresh_ptrDrawableEnd = 8;
         /**
@@ -705,7 +710,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrDrawableStart
+          @attr name android:ptrDrawableStart
         */
         public static final int PullToRefresh_ptrDrawableStart = 7;
         /**
@@ -715,7 +720,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.ffapp.bbtimeline.tenant:ptrDrawableTop
+          @attr name android:ptrDrawableTop
         */
         public static final int PullToRefresh_ptrDrawableTop = 17;
         /**
@@ -729,7 +734,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrHeaderBackground
+          @attr name android:ptrHeaderBackground
         */
         public static final int PullToRefresh_ptrHeaderBackground = 1;
         /**
@@ -743,7 +748,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrHeaderSubTextColor
+          @attr name android:ptrHeaderSubTextColor
         */
         public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
         /**
@@ -755,7 +760,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrHeaderTextAppearance
+          @attr name android:ptrHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
         /**
@@ -769,7 +774,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrHeaderTextColor
+          @attr name android:ptrHeaderTextColor
         */
         public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
@@ -786,7 +791,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrListViewExtrasEnabled
+          @attr name android:ptrListViewExtrasEnabled
         */
         public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
         /**
@@ -810,7 +815,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrMode
+          @attr name android:ptrMode
         */
         public static final int PullToRefresh_ptrMode = 4;
         /**
@@ -823,7 +828,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrOverScroll
+          @attr name android:ptrOverScroll
         */
         public static final int PullToRefresh_ptrOverScroll = 9;
         /**
@@ -837,7 +842,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrRefreshableViewBackground
+          @attr name android:ptrRefreshableViewBackground
         */
         public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
         /**
@@ -853,7 +858,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrRotateDrawableWhilePulling
+          @attr name android:ptrRotateDrawableWhilePulling
         */
         public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
         /**
@@ -866,7 +871,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrScrollingWhileRefreshingEnabled
+          @attr name android:ptrScrollingWhileRefreshingEnabled
         */
         public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
         /**
@@ -879,7 +884,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrShowIndicator
+          @attr name android:ptrShowIndicator
         */
         public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
@@ -891,7 +896,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.ffapp.bbtimeline.tenant:ptrSubHeaderTextAppearance
+          @attr name android:ptrSubHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
     };
