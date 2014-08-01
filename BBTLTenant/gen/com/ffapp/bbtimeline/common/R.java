@@ -88,20 +88,29 @@ public final class R {
 		public static final int s7 = 0x7f020028;
 		public static final int s8 = 0x7f020029;
 		public static final int s9 = 0x7f02002a;
-		public static final int title_bg = 0x7f02002d;
-		public static final int top_titlebar_normal = 0x7f02002e;
+		public static final int t1 = 0x7f02002d;
+		public static final int t2 = 0x7f02002e;
+		public static final int t3 = 0x7f02002f;
+		public static final int t4 = 0x7f020030;
+		public static final int t5 = 0x7f020031;
+		public static final int t6 = 0x7f020032;
+		public static final int t7 = 0x7f020033;
+		public static final int t8 = 0x7f020034;
+		public static final int t9 = 0x7f020035;
+		public static final int title_bg = 0x7f020036;
+		public static final int top_titlebar_normal = 0x7f020037;
 	}
 	public static final class id {
 		public static final int nav_title = 0x7f060000;
 		public static final int title_btn_left = 0x7f060003;
 		public static final int title_btn_right1 = 0x7f060004;
-		public static final int title_btn_right1_layout = 0x7f06002d;
+		public static final int title_btn_right1_layout = 0x7f060043;
 		public static final int title_btn_right2 = 0x7f060005;
 		public static final int title_txt1 = 0x7f060001;
 		public static final int title_txt2 = 0x7f060002;
 	}
 	public static final class layout {
-		public static final int title_btn_bar = 0x7f03000e;
+		public static final int title_btn_bar = 0x7f03001a;
 	}
 	public static final class string {
 		public static final int about_title = 0x7f070001;

@@ -95,8 +95,17 @@ public final class R {
         public static int s7=0x7f020026;
         public static int s8=0x7f020027;
         public static int s9=0x7f020028;
-        public static int title_bg=0x7f020029;
-        public static int top_titlebar_normal=0x7f02002a;
+        public static int t1=0x7f020029;
+        public static int t2=0x7f02002a;
+        public static int t3=0x7f02002b;
+        public static int t4=0x7f02002c;
+        public static int t5=0x7f02002d;
+        public static int t6=0x7f02002e;
+        public static int t7=0x7f02002f;
+        public static int t8=0x7f020030;
+        public static int t9=0x7f020031;
+        public static int title_bg=0x7f020032;
+        public static int top_titlebar_normal=0x7f020033;
     }
     public static final class id {
         /**  tab主页 

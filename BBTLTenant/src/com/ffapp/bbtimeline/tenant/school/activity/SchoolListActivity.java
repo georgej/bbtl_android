@@ -19,8 +19,10 @@ import com.ffapp.bbtimeline.tenant.school.adapter.SchoolAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +40,7 @@ public class SchoolListActivity extends BaseActivity  {
 	private ArrayList<BBTLSchool> schoolItems;
 	private TextView titleName;//标题名
 	private Button title_btn_right;
+	private ImageView title_btn_back;
 
 	public SchoolListActivity() {
 		// TODO Auto-generated constructor stub
@@ -77,7 +80,15 @@ public class SchoolListActivity extends BaseActivity  {
 		titleName = (TextView)findViewById(R.id.title_txt1);
 		titleName.setText(R.string.schoolManagerString);//
 		
-		
+		title_btn_back = (ImageView)findViewById(R.id.title_btn_left);
+		title_btn_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				SchoolListActivity.this.finish();
+			}
+		});
 		
 		
 //		SimpleAdapter schoolDataAdapter = new SimpleAdapter(this,list,android.R.layout.simple_expandable_list_item_2, null, null);

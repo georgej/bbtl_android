@@ -10,7 +10,11 @@ import java.util.List;
 import com.ffapp.bbtimeline.tenant.R;
 import com.ffapp.bbtimeline.tenant.R.layout;
 import com.ffapp.bbtimeline.tenant.R.menu;
+import com.ffapp.bbtimeline.tenant.ask.activity.AskListActivity;
+import com.ffapp.bbtimeline.tenant.bbtlclass.activity.ClassListActivity;
 import com.ffapp.bbtimeline.tenant.school.activity.SchoolListActivity;
+import com.ffapp.bbtimeline.tenant.student.activity.StudentListActivity;
+import com.ffapp.bbtimeline.tenant.teacher.activity.TeacherListActivity;
 
 import android.os.Bundle;
 import android.R.anim;
@@ -50,16 +54,24 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	public void onBtnTeacherMClick(View view) {
-		Toast.makeText(this, "onBtnTeacherMClick clicked!", Toast.LENGTH_SHORT).show();
+//		Toast.makeText(this, "onBtnTeacherMClick clicked!", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(MainActivity.this,TeacherListActivity.class);
+		startActivity(intent);
 	}
 	public void onBtnStudentMClick(View view) {
-		Toast.makeText(this, "onBtnStudentMClick clicked!", Toast.LENGTH_SHORT).show();
+//		Toast.makeText(this, "onBtnStudentMClick clicked!", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(MainActivity.this,StudentListActivity.class);
+		startActivity(intent);
 	}
 	public void onBtnAskMClick(View view) {
-		Toast.makeText(this, "onBtnAskMClick clicked!", Toast.LENGTH_SHORT).show();
+//		Toast.makeText(this, "onBtnAskMClick clicked!", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(MainActivity.this,AskListActivity.class);
+		startActivity(intent);
 	}
 	public void onBtnClassMClick(View view) {
-		Toast.makeText(this, "onBtnClassMClick clicked!", Toast.LENGTH_SHORT).show();
+//		Toast.makeText(this, "onBtnClassMClick clicked!", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(MainActivity.this,ClassListActivity.class);
+		startActivity(intent);
 	}
 	
 

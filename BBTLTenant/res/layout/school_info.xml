@@ -37,84 +37,89 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 <!-- 学校基本信息 -->
-            <LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="92dp"
                 android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/schoolName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="schoolNameschoolNameschochoolNames" />
+                    android:text="名称：盐池起航英语培训第一分校"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="addressaddressaddressaddressaddres" />
+                    android:text="地址：盐池一中附近73号2楼"  android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/telphone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="telphonetelphonetelphonete" />
+                    android:text="电话：18610871086"  android:textSize="20sp" />
             </LinearLayout>
             <!-- 学校基本信息  end-->
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="76dp"
             android:orientation="horizontal" >
             
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="124dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical" >
+
 				<TextView
                     android:id="@+id/telph7one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="555" />
+                    android:text="评星"  android:textSize="20sp" />
 				<TextView
                     android:id="@+id/telphone6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="※※※※※※" />
+                    android:text="※※※※※※"  android:textSize="20sp" />
               
             </LinearLayout>
+
              <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
+                 android:layout_width="111dp"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
 				<TextView
                     android:id="@+id/telphone5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="555" />
+                    android:text="咨询人数"  android:textSize="20sp" />
 				<TextView
                     android:id="@+id/telphone4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="※※※※※※" />
+                    android:text="457"  android:textSize="20sp" />
               
             </LinearLayout>
+
              <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
+                 android:layout_width="118dp"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
 				<TextView
                     android:id="@+id/telphone2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="555" />
+                    android:text="报名人数"  android:textSize="20sp" />
 				<TextView
                     android:id="@+id/telphone3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="※※※※※※" />
+                    android:text="554"  android:textSize="20sp" />
               
             </LinearLayout>
         </LinearLayout>
@@ -125,15 +130,17 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal" >
 				<Button
-				    android:id="@+id/button1"
+				    android:id="@+id/callPhone"
 				    android:layout_width="92dp"
 				    android:layout_height="wrap_content"
+				    android:onClick="callPhoneHandler"
 				    android:text="咨询" />
 
 				<Button
-				    android:id="@+id/button2"
+				    android:id="@+id/enroll"
 				    android:layout_width="225dp"
 				    android:layout_height="wrap_content"
+				    android:onClick="enrollHandler"
 				    android:text="报名" />
             </LinearLayout>
 </LinearLayout>

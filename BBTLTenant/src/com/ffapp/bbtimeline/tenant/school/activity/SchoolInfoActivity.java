@@ -10,17 +10,23 @@ package com.ffapp.bbtimeline.tenant.school.activity;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ImageView.ScaleType;
 
@@ -34,11 +40,15 @@ import com.ffapp.bbtimeline.tenant.R;
  *
  */
 public class SchoolInfoActivity extends BaseActivity {
+	private String TAG = "SchoolInfoActivity";
 	private ViewPager viewPager;  
 	 private ArrayList<View> pageViews;  
 	 private ImageView imageView;  
 	 private ImageView[] imageViews; 
 	 private ViewGroup group;
+	 
+	 private TextView titleName;//标题名
+		private ImageView title_btn_back;
 	/** 
 	 * <p>Title: </p> 
 	 * <p>Description: </p>  
@@ -61,6 +71,39 @@ public class SchoolInfoActivity extends BaseActivity {
 		
 		initViewPager();
 		
+		
+		titleName = (TextView)findViewById(R.id.title_txt1);
+		titleName.setText(R.string.showSchoolString);//
+		findViewById(R.id.title_btn_right1).setVisibility(View.INVISIBLE);
+	
+		title_btn_back = (ImageView)findViewById(R.id.title_btn_left);
+		title_btn_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				SchoolInfoActivity.this.finish();
+			}
+		});
+		
+		
+		
+		
+		
+	}
+	public void callPhoneHandler(View v){
+		Log.i(TAG, "咨询记录和拨打电话");
+		  //传入服务， parse（）解析号码
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18610871086"));
+        //通知activtity处理传入的call服务
+        SchoolInfoActivity.this.startActivity(intent);
+	}
+	public void enrollHandler(View v){
+		Log.i(TAG, "报名");
+		  //传入服务， parse（）解析号码
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18610871086"));
+        //通知activtity处理传入的call服务
+        SchoolInfoActivity.this.startActivity(intent);
 	}
 	/**
 	 * 根据请求来的图片，显示侧滑效果
@@ -242,6 +285,6 @@ public class SchoolInfoActivity extends BaseActivity {
         }  
     } 
     private void showToastMsg(){
-    	Toast.makeText(this, "dddd", Toast.LENGTH_SHORT).show();
+    	Toast.makeText(this, "学校形象宣传照片", Toast.LENGTH_SHORT).show();
     }
 }

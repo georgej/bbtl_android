@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/teacherInfoTitle"
+        layout="@layout/title_btn_bar" />
+    <!-- pageView begin -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/showImagePages"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <!-- pageView end -->
+    <!-- info begin -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+<!-- 学校基本信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称：盐池起航英语培训第一分校"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址：盐池一中附近73号2楼"  android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话：18610871086"  android:textSize="20sp" />
+            </LinearLayout>
+            <!-- 学校基本信息  end-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+				<TextView
+                    android:id="@+id/telph7one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评星"  android:textSize="20sp" />
+				<TextView
+                    android:id="@+id/telphone6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="※※※※※※"  android:textSize="20sp" />
+              
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="111dp"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
+				<TextView
+                    android:id="@+id/telphone5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="咨询人数"  android:textSize="20sp" />
+				<TextView
+                    android:id="@+id/telphone4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="457"  android:textSize="20sp" />
+              
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="118dp"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
+				<TextView
+                    android:id="@+id/telphone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名人数"  android:textSize="20sp" />
+				<TextView
+                    android:id="@+id/telphone3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="554"  android:textSize="20sp" />
+              
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- info end -->
+ <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+				<Button
+				    android:id="@+id/callPhone"
+				    android:layout_width="92dp"
+				    android:layout_height="wrap_content"
+				    android:onClick="callPhoneHandler"
+				    android:text="咨询" />
+
+				<Button
+				    android:id="@+id/enroll"
+				    android:layout_width="225dp"
+				    android:layout_height="wrap_content"
+				    android:onClick="enrollHandler"
+				    android:text="报名" />
+            </LinearLayout>
+</LinearLayout>

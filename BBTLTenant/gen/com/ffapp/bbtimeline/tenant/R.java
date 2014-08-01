@@ -357,15 +357,29 @@ containing a value of this type.
         public static final int s9=0x7f02002a;
         public static final int school_info_top_image=0x7f02002b;
         public static final int school_info_top_image2=0x7f02002c;
-        public static final int title_bg=0x7f02002d;
-        public static final int top_titlebar_normal=0x7f02002e;
-        public static final int welcome=0x7f02002f;
+        public static final int t1=0x7f02002d;
+        public static final int t2=0x7f02002e;
+        public static final int t3=0x7f02002f;
+        public static final int t4=0x7f020030;
+        public static final int t5=0x7f020031;
+        public static final int t6=0x7f020032;
+        public static final int t7=0x7f020033;
+        public static final int t8=0x7f020034;
+        public static final int t9=0x7f020035;
+        public static final int title_bg=0x7f020036;
+        public static final int top_titlebar_normal=0x7f020037;
+        public static final int welcome=0x7f020038;
     }
     public static final class id {
-        public static final int ItemImage=0x7f060017;
-        public static final int ItemText=0x7f060018;
-        public static final int action_settings=0x7f06002e;
-        public static final int address=0x7f06001d;
+        public static final int ItemImage=0x7f060030;
+        public static final int ItemText=0x7f060031;
+        public static final int action_settings=0x7f060044;
+        public static final int address=0x7f06001b;
+        public static final int askList=0x7f060026;
+        public static final int ask_address=0x7f06002a;
+        public static final int ask_logo_s=0x7f060028;
+        public static final int ask_shortName=0x7f060029;
+        public static final int ask_slogan=0x7f060027;
         public static final int both=0x7f060009;
         public static final int btnAskM=0x7f060012;
         public static final int btnBegin=0x7f060014;
@@ -373,12 +387,17 @@ containing a value of this type.
         public static final int btnSchoolM=0x7f06000f;
         public static final int btnStudentM=0x7f060011;
         public static final int btnTeacherM=0x7f060010;
-        public static final int button1=0x7f060025;
-        public static final int button2=0x7f060026;
+        public static final int callPhone=0x7f060023;
+        public static final int classList=0x7f06002b;
+        public static final int class_address=0x7f06002f;
+        public static final int class_logo_s=0x7f06002d;
+        public static final int class_shortName=0x7f06002e;
+        public static final int class_slogan=0x7f06002c;
         public static final int disabled=0x7f060006;
+        public static final int enroll=0x7f060024;
         public static final int flip=0x7f06000e;
         public static final int imageView1=0x7f060016;
-        public static final int include1=0x7f060027;
+        public static final int include1=0x7f060025;
         public static final int manualOnly=0x7f06000a;
         /**  tab主页 
          */
@@ -388,31 +407,43 @@ containing a value of this type.
         public static final int pullFromStart=0x7f060007;
         public static final int pullUpFromBottom=0x7f06000c;
         public static final int rotate=0x7f06000d;
-        public static final int schoolInfoTitle=0x7f060019;
-        public static final int schoolList=0x7f060028;
-        public static final int schoolName=0x7f06001c;
-        public static final int school_address=0x7f060029;
-        public static final int school_logo_s=0x7f06002b;
-        public static final int school_shortName=0x7f06002c;
-        public static final int school_slogan=0x7f06002a;
-        public static final int showImagePages=0x7f06001a;
+        public static final int schoolInfoTitle=0x7f060032;
+        public static final int schoolList=0x7f060034;
+        public static final int schoolName=0x7f060033;
+        public static final int school_address=0x7f060035;
+        public static final int school_logo_s=0x7f060037;
+        public static final int school_shortName=0x7f060038;
+        public static final int school_slogan=0x7f060036;
+        public static final int showImagePages=0x7f060018;
         public static final int spinner1=0x7f060015;
-        public static final int telph7one=0x7f06001f;
-        public static final int telphone=0x7f06001e;
-        public static final int telphone2=0x7f060023;
-        public static final int telphone3=0x7f060024;
-        public static final int telphone4=0x7f060022;
-        public static final int telphone5=0x7f060021;
-        public static final int telphone6=0x7f060020;
+        public static final int studentList=0x7f060039;
+        public static final int student_address=0x7f06003d;
+        public static final int student_logo_s=0x7f06003b;
+        public static final int student_shortName=0x7f06003c;
+        public static final int student_slogan=0x7f06003a;
+        public static final int teacherInfoTitle=0x7f060017;
+        public static final int teacherList=0x7f06003e;
+        public static final int teacherName=0x7f06001a;
+        public static final int teacher_address=0x7f060042;
+        public static final int teacher_logo_s=0x7f060040;
+        public static final int teacher_shortName=0x7f060041;
+        public static final int teacher_slogan=0x7f06003f;
+        public static final int telph7one=0x7f06001d;
+        public static final int telphone=0x7f06001c;
+        public static final int telphone2=0x7f060021;
+        public static final int telphone3=0x7f060022;
+        public static final int telphone4=0x7f060020;
+        public static final int telphone5=0x7f06001f;
+        public static final int telphone6=0x7f06001e;
         public static final int title_btn_left=0x7f060003;
         public static final int title_btn_right1=0x7f060004;
-        public static final int title_btn_right1_layout=0x7f06002d;
+        public static final int title_btn_right1_layout=0x7f060043;
         public static final int title_btn_right2=0x7f060005;
         /**  title 
          */
         public static final int title_txt1=0x7f060001;
         public static final int title_txt2=0x7f060002;
-        public static final int viewGroup=0x7f06001b;
+        public static final int viewGroup=0x7f060019;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -425,11 +456,23 @@ containing a value of this type.
         public static final int activity_teacher_list=0x7f030007;
         public static final int activity_teacher_modify=0x7f030008;
         public static final int activity_welcome=0x7f030009;
-        public static final int menuitem=0x7f03000a;
-        public static final int school_info=0x7f03000b;
-        public static final int school_list=0x7f03000c;
-        public static final int school_list_item=0x7f03000d;
-        public static final int title_btn_bar=0x7f03000e;
+        public static final int ask_info=0x7f03000a;
+        public static final int ask_list=0x7f03000b;
+        public static final int ask_list_item=0x7f03000c;
+        public static final int class_info=0x7f03000d;
+        public static final int class_list=0x7f03000e;
+        public static final int class_list_item=0x7f03000f;
+        public static final int menuitem=0x7f030010;
+        public static final int school_info=0x7f030011;
+        public static final int school_list=0x7f030012;
+        public static final int school_list_item=0x7f030013;
+        public static final int student_info=0x7f030014;
+        public static final int student_list=0x7f030015;
+        public static final int student_list_item=0x7f030016;
+        public static final int teacher_info=0x7f030017;
+        public static final int teacher_list=0x7f030018;
+        public static final int teacher_list_item=0x7f030019;
+        public static final int title_btn_bar=0x7f03001a;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -440,15 +483,20 @@ containing a value of this type.
         public static final int about_title=0x7f070001;
         public static final int action_settings=0x7f070002;
         public static final int app_name=0x7f070000;
-        public static final int askManagerString=0x7f070009;
-        public static final int backString=0x7f07000b;
-        public static final int classManagerString=0x7f07000a;
-        public static final int createNewSchool_btn=0x7f070006;
+        public static final int askManagerString=0x7f07000d;
+        public static final int backString=0x7f070010;
+        public static final int classManagerString=0x7f07000e;
+        public static final int createNewSchool_btn=0x7f070007;
+        public static final int createNew_btn=0x7f070005;
         public static final int hello_world=0x7f070003;
         public static final int newbieguideString=0x7f070004;
-        public static final int schoolManagerString=0x7f070005;
-        public static final int studentsManagerString=0x7f070008;
-        public static final int teacherManagerString=0x7f070007;
+        public static final int schoolManagerString=0x7f070006;
+        public static final int showClassString=0x7f07000f;
+        public static final int showSchoolString=0x7f070008;
+        public static final int showStudentString=0x7f07000c;
+        public static final int showTeacherString=0x7f07000a;
+        public static final int studentsManagerString=0x7f07000b;
+        public static final int teacherManagerString=0x7f070009;
     }
     public static final class style {
         /** 
