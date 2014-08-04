@@ -104,13 +104,13 @@ public final class R {
 		public static final int nav_title = 0x7f060000;
 		public static final int title_btn_left = 0x7f060003;
 		public static final int title_btn_right1 = 0x7f060004;
-		public static final int title_btn_right1_layout = 0x7f060043;
+		public static final int title_btn_right1_layout = 0x7f060053;
 		public static final int title_btn_right2 = 0x7f060005;
 		public static final int title_txt1 = 0x7f060001;
 		public static final int title_txt2 = 0x7f060002;
 	}
 	public static final class layout {
-		public static final int title_btn_bar = 0x7f03001a;
+		public static final int title_btn_bar = 0x7f03001c;
 	}
 	public static final class string {
 		public static final int about_title = 0x7f070001;

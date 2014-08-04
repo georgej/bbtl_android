@@ -7,28 +7,30 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
-	<uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 屏幕常亮 -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 屏幕常亮 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-    
-     <uses-permission android:name="android.permission.CALL_PHONE"/>
-    
-    <supports-screens 
-        android:normalScreens="true"
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
         android:largeScreens="true"
-        android:xlargeScreens="true"
-        android:smallScreens="true"/>
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -46,64 +48,70 @@
         </activity>
         <activity
             android:name="com.ffapp.bbtimeline.tenant.activity.MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.activity.NewbieGuideActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.school.activity.SchoolListActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.school.activity.SchoolInfoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.teacher.activity.TeacherListActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.teacher.activity.TeacherInfoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.student.activity.StudentListActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.student.activity.StudentInfoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-        
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.ask.activity.AskListActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.ask.activity.AskInfoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-        
-          <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.bbtlclass.activity.ClassListActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
-         <activity
+        <activity
             android:name="com.ffapp.bbtimeline.tenant.bbtlclass.activity.ClassInfoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ffapp.bbtimeline.tenant.school.activity.SchoolModifyInfoActivity"
+            android:label="@string/title_activity_school_modify_info" >
+        </activity>
+        <activity
+            android:name="com.ffapp.bbtimeline.tenant.school.activity.SchoolCreateNewActivity"
+            android:label="@string/title_activity_school_create_new" >
         </activity>
     </application>
 

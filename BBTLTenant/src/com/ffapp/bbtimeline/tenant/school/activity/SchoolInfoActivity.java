@@ -49,6 +49,7 @@ public class SchoolInfoActivity extends BaseActivity {
 	 
 	 private TextView titleName;//标题名
 		private ImageView title_btn_back;
+	private Button title_btn_right;
 	/** 
 	 * <p>Title: </p> 
 	 * <p>Description: </p>  
@@ -74,8 +75,17 @@ public class SchoolInfoActivity extends BaseActivity {
 		
 		titleName = (TextView)findViewById(R.id.title_txt1);
 		titleName.setText(R.string.showSchoolString);//
-		findViewById(R.id.title_btn_right1).setVisibility(View.INVISIBLE);
-	
+		//findViewById(R.id.title_btn_right1).setVisibility(View.INVISIBLE);
+		title_btn_right = (Button)findViewById(R.id.title_btn_right1);
+		title_btn_right.setText(R.string.modify);// 编辑
+		title_btn_right.setOnClickListener(new OnClickListener(){
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast.makeText(SchoolInfoActivity.this, "编辑",Toast.LENGTH_SHORT);
+			}
+		});
 		title_btn_back = (ImageView)findViewById(R.id.title_btn_left);
 		title_btn_back.setOnClickListener(new OnClickListener() {
 			
