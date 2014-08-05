@@ -77,16 +77,6 @@ public class SchoolListActivity extends BaseActivity  {
 		
 		title_btn_right=(Button)findViewById(R.id.title_btn_right1);
 		title_btn_right.setText(R.string.createNewSchool_btn);//创建新分校
-		title_btn_right.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent=new Intent(SchoolListActivity.this,SchoolCreateNewActivity.class);
-				startActivity(intent);
-			}
-		});
-		
 		titleName = (TextView)findViewById(R.id.title_txt1);
 		titleName.setText(R.string.schoolManagerString);//
 		

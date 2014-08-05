@@ -5,20 +5,25 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="newbieguideString">新手引导</string>
-    <string name="createNew_btn">添加</string>
+     <string name="createNew_btn">添加</string>
+    
     <string name="schoolManagerString">学校管理</string>
     <string name="createNewSchool_btn">创建新分校</string>
-    <string name="showSchoolString">学校展示</string>
+    <string name="showSchoolString">学校展示</string>    
+    
+    
     <string name="teacherManagerString">老师管理</string>
-    <string name="showTeacherString">老师展示</string>
+    <string name="showTeacherString">老师展示</string>  
+    
     <string name="studentsManagerString">学员管理</string>
-    <string name="showStudentString">学员展示</string>
+    <string name="showStudentString">学员展示</string>  
+    
     <string name="askManagerString">咨询管理</string>
+    
+    
     <string name="classManagerString">班级管理</string>
-    <string name="showClassString">班级展示</string>
+    <string name="showClassString">班级展示</string>  
+    
     <string name="backString">返回</string>
-    <string name="modify">编辑</string>
-    <string name="title_activity_school_modify_info">SchoolModifyInfoActivity</string>
-    <string name="title_activity_school_create_new">SchoolCreateNewActivity</string>
 
 </resources>
