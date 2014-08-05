@@ -20,7 +20,7 @@ public class SchoolCreateNewActivity extends Activity {
 	}
 
 	public void changeLogoImage(View v){
-		System.out.println("变更logo图");
+		System.out.println("变更logo图    ");
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
