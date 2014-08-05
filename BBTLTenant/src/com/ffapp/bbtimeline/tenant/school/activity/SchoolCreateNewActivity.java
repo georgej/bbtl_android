@@ -1,15 +1,12 @@
 package com.ffapp.bbtimeline.tenant.school.activity;
 
+import com.ffapp.bbtimeline.common.base.BaseActivity;
 import com.ffapp.bbtimeline.tenant.R;
-import com.ffapp.bbtimeline.tenant.R.layout;
-import com.ffapp.bbtimeline.tenant.R.menu;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
 import android.view.View;
 
-public class SchoolCreateNewActivity extends Activity {
+public class SchoolCreateNewActivity extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +19,60 @@ public class SchoolCreateNewActivity extends Activity {
 	public void changeLogoImage(View v){
 		System.out.println("变更logo图    ");
 	}
+
+	/* (non-Javadoc)
+	 * <p>Title: setContentLayout</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#setContentLayout() 
+	*/
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.school_create_new, menu);
-		return true;
+	public void setContentLayout() {
+		// TODO Auto-generated method stub
+		
 	}
 
+	/* (non-Javadoc)
+	 * <p>Title: dealLogicBeforeInitView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#dealLogicBeforeInitView() 
+	*/
+	@Override
+	public void dealLogicBeforeInitView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: initView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#initView() 
+	*/
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: dealLogicAfterInitView</p> 
+	 * <p>Description: </p>  
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#dealLogicAfterInitView() 
+	*/
+	@Override
+	public void dealLogicAfterInitView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/* (non-Javadoc)
+	 * <p>Title: onClickEvent</p> 
+	 * <p>Description: </p> 
+	 * @param view 
+	 * @see com.ffapp.bbtimeline.common.base.BaseActivity#onClickEvent(android.view.View) 
+	*/
+	@Override
+	public void onClickEvent(View view) {
+		// TODO Auto-generated method stub
+		
+	}
 }
