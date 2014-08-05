@@ -5,15 +5,33 @@ import com.ffapp.bbtimeline.tenant.R;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SchoolCreateNewActivity extends BaseActivity {
-
+	 
+	 private TextView titleName;//标题名
+		private ImageView title_btn_back;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.school_create_new);
 		
-		
+
+		titleName = (TextView)findViewById(R.id.title_txt1);
+		titleName.setText(R.string.createNewSchool_btn);//
+		findViewById(R.id.title_btn_right1).setVisibility(View.INVISIBLE);
+	
+		title_btn_back = (ImageView)findViewById(R.id.title_btn_left);
+		title_btn_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				SchoolCreateNewActivity.this.finish();
+			}
+		});
 	}
 
 	public void changeLogoImage(View v){
