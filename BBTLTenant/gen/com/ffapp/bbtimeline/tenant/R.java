@@ -394,6 +394,7 @@ containing a value of this type.
         public static final int class_logo_s=0x7f06002d;
         public static final int class_shortName=0x7f06002e;
         public static final int class_slogan=0x7f06002c;
+        public static final int createNewBtn=0x7f060042;
         public static final int description=0x7f060041;
         public static final int disabled=0x7f060006;
         public static final int email=0x7f06003f;
@@ -408,7 +409,6 @@ containing a value of this type.
         public static final int lng=0x7f06003a;
         public static final int logoImage=0x7f060035;
         public static final int manualOnly=0x7f06000a;
-        public static final int name=0x7f060037;
         /**  tab主页 
          */
         public static final int nav_title=0x7f060000;
@@ -417,9 +417,9 @@ containing a value of this type.
         public static final int pullFromStart=0x7f060007;
         public static final int pullUpFromBottom=0x7f06000c;
         public static final int rotate=0x7f06000d;
-        public static final int schoolInfoTitle=0x7f060042;
+        public static final int schoolInfoTitle=0x7f060043;
         public static final int schoolList=0x7f060044;
-        public static final int schoolName=0x7f060043;
+        public static final int schoolName=0x7f060037;
         public static final int school_address=0x7f060045;
         public static final int school_logo_s=0x7f060047;
         public static final int school_shortName=0x7f060048;

@@ -222,6 +222,7 @@ int id class_address 0x7f06002f
 int id class_logo_s 0x7f06002d
 int id class_shortName 0x7f06002e
 int id class_slogan 0x7f06002c
+int id createNewBtn 0x7f060042
 int id description 0x7f060041
 int id disabled 0x7f060006
 int id email 0x7f06003f
@@ -236,16 +237,15 @@ int id linearLayout1 0x7f060033
 int id lng 0x7f06003a
 int id logoImage 0x7f060035
 int id manualOnly 0x7f06000a
-int id name 0x7f060037
 int id nav_title 0x7f060000
 int id pullDownFromTop 0x7f06000b
 int id pullFromEnd 0x7f060008
 int id pullFromStart 0x7f060007
 int id pullUpFromBottom 0x7f06000c
 int id rotate 0x7f06000d
-int id schoolInfoTitle 0x7f060042
+int id schoolInfoTitle 0x7f060043
 int id schoolList 0x7f060044
-int id schoolName 0x7f060043
+int id schoolName 0x7f060037
 int id school_address 0x7f060045
 int id school_logo_s 0x7f060047
 int id school_shortName 0x7f060048

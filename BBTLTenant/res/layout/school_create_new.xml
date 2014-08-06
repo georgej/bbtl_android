@@ -75,12 +75,10 @@
             android:orientation="vertical" >
 
             <EditText
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
+                android:id="@+id/schoolName"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_weight="1"
-                android:ems="10"
                 android:hint="请输入学校全名"
                 android:imeOptions="actionNext" />
 
@@ -95,7 +93,7 @@
 
             <EditText
                 android:id="@+id/telphone"
-                android:layout_width="248dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:hint="请输入手机号码"
@@ -116,12 +114,13 @@
                     android:hint="请输入学校地址"
                     android:imeOptions="actionNext" />
 
-                <ImageButton
+
+                <Button
                     android:id="@+id/getAddressByMap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_launcher" />
+                    android:text="通过地图获取" />
+                
             </LinearLayout>
 
             <LinearLayout
@@ -203,5 +202,13 @@
                 android:inputType="textPostalAddress" />
         </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/createNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:text="创建" />
 
 </RelativeLayout>
